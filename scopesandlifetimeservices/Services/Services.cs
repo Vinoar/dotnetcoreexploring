@@ -4,10 +4,7 @@
     {
         public Guid ScopeId { get; set; }
 
-        public void Dispose()
-        {
-            GC.Collect();
-        }
+        public void Dispose() => GC.Collect();
 
         public ScopedService()
         {
@@ -19,10 +16,8 @@
     {
         public Guid SingletonId { get; set; }
 
-        public void Dispose()
-        {
-            GC.Collect();
-        }
+        public void Dispose() => GC.Collect();
+          
         public SingletonService()
         {
             SingletonId = Guid.NewGuid();
@@ -33,10 +28,8 @@
     {
         public Guid TransientId { get; set; }
 
-        public void Dispose()
-        {
-            GC.Collect();
-        }
+        public void Dispose() => GC.Collect();
+
         public TransientService()
         {
             TransientId = Guid.NewGuid();

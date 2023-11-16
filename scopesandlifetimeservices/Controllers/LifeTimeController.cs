@@ -23,15 +23,21 @@ namespace scopesandlifetimeservices.Controllers
             _scopedService = scopedService;
             _transientService = transientService;
             _sample = sample;
-        } 
-      
+        }
+
         [HttpGet("request")]
         public ActionResult RequestMade()
-        {
-            var message = $"Sample Service GetSingletonID {_sample.GetSingletonID()}, ISingletonService Service {_singletonService.SingletonId} " +
-                $"Sample Service GetScopedID {_sample.GetScopedID()}, IScopedService Service {_scopedService.ScopeId} " +
-                $"Sample Service GetTransientID {_sample.GetTransientID()}, ITransientService Service {_transientService.TransientId}";
-            return Ok(message);
+        { 
+            var message = $"<!DOCTYPE html><html lang=en><meta charset=UTF-8><meta content=\"width=device-width,initial-scale=1\"name=viewport><title>Scopes and Lifetime Management</title><h1>Scopes and Lifetime Management.</h1>" +
+                $"GetSingletonID<ul><li><b>Sample Service </b>{_sample.GetSingletonID()}<li><b>ISingletonService Service</b> {_singletonService.SingletonId}</ul>" +
+                $"GetScopedID<ul><li><b>Sample Service </b>{_sample.GetScopedID()}<li><b>IScopedService Service </b>{_scopedService.ScopeId}</ul>" +
+                $"GetTransientID<ul><li><b>Sample Service </b>{_sample.GetTransientID()}<li><b>ITransientService Service</b> {_transientService.TransientId}</ul>";
+
+            return new ContentResult
+            {
+                Content = message,
+                ContentType = "text/html"
+            };
         }
     }
 }
