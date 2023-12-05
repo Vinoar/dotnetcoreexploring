@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "scopesandlifetimeservices",
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MiddlewareCollections", "middlewarecollection\MiddlewareCollections.csproj", "{7EC168BA-0EFA-4EDD-9F58-0C140F645E08}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoggerMiddlewareExample", "LoggerMiddlewareExample\LoggerMiddlewareExample.csproj", "{D594E525-8867-4607-9DFF-154F97FE77E3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{7EC168BA-0EFA-4EDD-9F58-0C140F645E08}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7EC168BA-0EFA-4EDD-9F58-0C140F645E08}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7EC168BA-0EFA-4EDD-9F58-0C140F645E08}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D594E525-8867-4607-9DFF-154F97FE77E3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D594E525-8867-4607-9DFF-154F97FE77E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D594E525-8867-4607-9DFF-154F97FE77E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D594E525-8867-4607-9DFF-154F97FE77E3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,0 +1,6 @@
+@LoggerMiddlewareExample_HostAddress = http://localhost:5204
+
+GET {{LoggerMiddlewareExample_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
